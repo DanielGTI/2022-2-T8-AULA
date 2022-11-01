@@ -1,0 +1,101 @@
+[gd_scene load_steps=52 format=2]
+
+[ext_resource path="res://Sprite/Dino/Jump (3).png" type="Texture" id=1]
+[ext_resource path="res://Sprite/Dino/Jump (12).png" type="Texture" id=2]
+[ext_resource path="res://Sprite/Dino/Jump (4).png" type="Texture" id=3]
+[ext_resource path="res://Sprite/Dino/Jump (5).png" type="Texture" id=4]
+[ext_resource path="res://Sprite/Dino/Dead (1).png" type="Texture" id=5]
+[ext_resource path="res://Sprite/Dino/Jump (6).png" type="Texture" id=6]
+[ext_resource path="res://Sprite/Dino/Run (1).png" type="Texture" id=7]
+[ext_resource path="res://Sprite/Dino/Jump (7).png" type="Texture" id=8]
+[ext_resource path="res://Sprite/Dino/Run (4).png" type="Texture" id=9]
+[ext_resource path="res://Sprite/Dino/Jump (1).png" type="Texture" id=10]
+[ext_resource path="res://Sprite/Dino/Dead (8).png" type="Texture" id=11]
+[ext_resource path="res://Sprite/Dino/Jump (2).png" type="Texture" id=12]
+[ext_resource path="res://Sprite/Dino/Jump (8).png" type="Texture" id=13]
+[ext_resource path="res://Sprite/Dino/Jump (9).png" type="Texture" id=14]
+[ext_resource path="res://Sprite/Dino/Walk (1).png" type="Texture" id=15]
+[ext_resource path="res://Sprite/Dino/Walk (6).png" type="Texture" id=16]
+[ext_resource path="res://Sprite/Dino/Jump (11).png" type="Texture" id=17]
+[ext_resource path="res://Sprite/Dino/Run (2).png" type="Texture" id=18]
+[ext_resource path="res://Sprite/Dino/Walk (4).png" type="Texture" id=19]
+[ext_resource path="res://Sprite/Dino/Walk (3).png" type="Texture" id=20]
+[ext_resource path="res://Sprite/Dino/Walk (8).png" type="Texture" id=21]
+[ext_resource path="res://Sprite/Dino/Walk (7).png" type="Texture" id=22]
+[ext_resource path="res://Sprite/Dino/Walk (2).png" type="Texture" id=23]
+[ext_resource path="res://Sprite/Dino/Run (3).png" type="Texture" id=24]
+[ext_resource path="res://Sprite/Dino/Walk (5).png" type="Texture" id=25]
+[ext_resource path="res://Sprite/Dino/Run (8).png" type="Texture" id=26]
+[ext_resource path="res://Sprite/Dino/Walk (10).png" type="Texture" id=27]
+[ext_resource path="res://Sprite/Dino/Run (7).png" type="Texture" id=28]
+[ext_resource path="res://Sprite/Dino/Run (6).png" type="Texture" id=29]
+[ext_resource path="res://Sprite/Dino/Walk (9).png" type="Texture" id=30]
+[ext_resource path="res://Sprite/Dino/Run (5).png" type="Texture" id=31]
+[ext_resource path="res://Sprite/Dino/Idle (4).png" type="Texture" id=32]
+[ext_resource path="res://Sprite/Dino/Dead (7).png" type="Texture" id=33]
+[ext_resource path="res://Sprite/Dino/Idle (2).png" type="Texture" id=34]
+[ext_resource path="res://Sprite/Dino/Idle (6).png" type="Texture" id=35]
+[ext_resource path="res://Sprite/Dino/Idle (9).png" type="Texture" id=36]
+[ext_resource path="res://Sprite/Dino/Dead (5).png" type="Texture" id=37]
+[ext_resource path="res://Sprite/Dino/Idle (7).png" type="Texture" id=38]
+[ext_resource path="res://Sprite/Dino/Idle (3).png" type="Texture" id=39]
+[ext_resource path="res://Sprite/Dino/Idle (8).png" type="Texture" id=40]
+[ext_resource path="res://Sprite/Dino/Dead (2).png" type="Texture" id=41]
+[ext_resource path="res://Sprite/Dino/Dead (4).png" type="Texture" id=42]
+[ext_resource path="res://Sprite/Dino/Idle (5).png" type="Texture" id=43]
+[ext_resource path="res://Sprite/Dino/Dead (3).png" type="Texture" id=44]
+[ext_resource path="res://Sprite/Dino/Idle (10).png" type="Texture" id=45]
+[ext_resource path="res://Sprite/Dino/Dead (6).png" type="Texture" id=46]
+[ext_resource path="res://Sprite/Dino/Idle (1).png" type="Texture" id=47]
+[ext_resource path="res://Sprite/Dino/Jump (10).png" type="Texture" id=48]
+[ext_resource path="res://Script/Player1.gd" type="Script" id=49]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 41 ), ExtResource( 44 ), ExtResource( 42 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 33 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "dead",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 34 ), ExtResource( 39 ), ExtResource( 32 ), ExtResource( 43 ), ExtResource( 35 ), ExtResource( 38 ), ExtResource( 40 ), ExtResource( 36 ), ExtResource( 45 ) ],
+"loop": true,
+"name": "idle",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 12 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 48 ), ExtResource( 17 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "jump",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 18 ), ExtResource( 24 ), ExtResource( 9 ), ExtResource( 31 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 23 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 25 ), ExtResource( 16 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 30 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "walk",
+"speed": 10.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 40.0
+height = 32.0
+
+[node name="Dino" type="KinematicBody2D"]
+script = ExtResource( 49 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 1.49999, 0 )
+scale = Vector2( 0.304412, 0.3 )
+frames = SubResource( 1 )
+animation = "idle"
+frame = 4
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -34, 0 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+cast_to = Vector2( 0, 56 )
